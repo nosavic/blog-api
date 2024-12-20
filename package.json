@@ -7,9 +7,9 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "node server.js",
+    "start": "node app.js",
     "migrate": "node -r ./initMongoose.js node_modules/.bin/migrate",
-    "dev": "nodemon server.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
