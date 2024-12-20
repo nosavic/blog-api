@@ -35,4 +35,4 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: "Something went wrong!" });
 });
 
-module.exports = app;
+module.exports = app; // Export app to be used in server.js
