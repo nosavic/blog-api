@@ -8,8 +8,6 @@ const User = require("../models/User"); // Ensure the path to your User model is
 
 // Connect to the database using the URI from the environment variables
 mongoose.connect(process.env.DB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
   serverSelectionTimeoutMS: 30000,
 });
 

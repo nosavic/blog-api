@@ -5,8 +5,7 @@ global.mongoose = mongoose;
 
 mongoose
   .connect(process.env.DB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000,
   })
   .then(() => console.log("Database connected"))
   .catch((err) => {

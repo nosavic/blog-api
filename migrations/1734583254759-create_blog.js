@@ -3,8 +3,6 @@ require("dotenv").config();
 const Blog = require("../models/Blog"); // Ensure the path is correct
 
 mongoose.connect(process.env.DB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
   serverSelectionTimeoutMS: 30000,
 });
 

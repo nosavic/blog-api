@@ -8,8 +8,7 @@ beforeAll(async () => {
   if (mongoose.connection.readyState === 0) {
     const mongoUri = "mongodb://localhost:27017/test_db"; // Adjust as needed
     await mongoose.connect(mongoUri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 30000,
     });
   }
 });
